@@ -1,0 +1,25 @@
+#btnborderout {
+	position: absolute;
+	left: 2.5%;
+	top: 2.5%;
+	text-align: center;
+	width: 95%;
+	height: 95%;
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+   -moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+     -o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+        transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+#flexcontainer {
+    display: -webkit-flex;
+    display: flex;
+	flex-wrap: nowrap;
+}
+
+#flexitem {
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-flex: 1;
+    flex: 1;
+}

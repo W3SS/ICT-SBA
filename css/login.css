@@ -1,0 +1,139 @@
+body {
+  font-family: Agency FB;
+}
+
+#leftborder {
+	position: fixed;
+	top: 0;
+	left: -23%;
+
+	width: 24%;
+	height: 100%;
+
+	background-color: #000000;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+#leftborder:hover {
+	left: 0px;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+.leftborder-white {
+	top: 1.25%;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-color: #000000;
+
+	position:absolute;
+
+	width: 95%;
+	height: 100%;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	max-height: 1080px;
+	overflow-y: auto;
+	cursor: pointer;
+}
+
+#rightborder {
+	position: fixed;
+	top: 0;
+	right: -23%;
+
+	width: 24%;
+	height: 100%;
+
+	background-color: #000000;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+#rightborder:hover {
+	right: 0px;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+.rightborder-white {
+	top: 1.25%;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-color: #000000;
+
+	position:absolute;
+	right: 0px;
+
+	width: 95%;
+	height: 100%;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	max-height: 1080px;
+	overflow-y: auto;
+	cursor: pointer;
+}
+
+#frm
+{
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}

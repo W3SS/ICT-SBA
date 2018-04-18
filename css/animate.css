@@ -1,0 +1,25 @@
+@keyframes bounce {
+    0%{opacity: 0.5;transform: translate3d(150px, 0, 0);}
+    2%{opacity: 1;}
+    4%{opacity: 0.5;}
+    6%{opacity: 1;}
+    8%{opacity: 0.5;}
+    10%{opacity: 1;transform: translate3d(50px, 0, 0);}
+    20%{transform: translate3d(10px, 0, 0);}
+    50%{transform: translate3d(2px, 0, 0);}
+    100%{transform: translate3d(0, 0, 0);}
+}
+
+@keyframes flash {
+    0% {opacity: 0.5;transform: scale3d(1, 1, 1)}
+    10%{opacity: 1;}
+    15%{opacity: 0.5;}
+    20%{opacity: 1;transform: scale3d(1.035, 1.035, 1.035)}
+    100%{opacity: 1;transform: scale3d(1.05, 1.05, 1.05)}
+}
+
+@keyframes inflash {
+    0%{transform: scale3d(1.05, 1.05, 1.05)}
+    10%{transform: scale3d(1.015, 1.015, 1.015)}
+    100% {transform: scale3d(1, 1, 1)}
+}

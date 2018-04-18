@@ -1,0 +1,105 @@
+#bro
+{
+	position: fixed;
+	top: 0%;
+}
+
+#bn
+{
+  	white-space: nowrap;
+
+	visibility: hidden;
+
+	position: fixed;
+	left: 12.75%;
+	top: 35%;
+
+	opacity: 0.5;
+
+	width: 43.95%;
+	/*width: 74%;*/
+	height: 60%;
+
+	border-style: solid;
+	border-width: 5px;
+	border-color: #000000;
+
+	text-align: center;
+	font-size: 150%;
+	line-height: 200%;
+
+	-webkit-transition: all 100ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 100ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 100ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 100ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+.textoverflow
+{
+	word-wrap: break-word;
+	text-overflow: ellipsis; /* will make [...] at the end */
+    width: 90%; /* change to your preferences */
+	height: 90%;
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+}
+
+.textoverflow_s
+{
+	word-wrap: break-word;
+	text-overflow: ellipsis; /* will make [...] at the end */
+    width: 100%; /* change to your preferences */
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+}
+
+.textoverflow_c
+{
+	word-wrap: break-word;
+	text-overflow: ellipsis; /* will make [...] at the end */
+    width: 100%; /* change to your preferences */
+	height: 75%;
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+}
+
+.bordertest
+{
+	animation-name: inflash;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	opacity: 1;
+
+	border-style: solid;
+	border-width: 5px;
+	background-color: white;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+#UploadIconButton
+{
+	visibility: hidden;
+	z-index: 0;
+}
+
+.bordertest:hover
+{
+	animation-name: flash;
+	animation-duration: 0.5s;
+
+	background-color: transparent;
+
+	-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+animation-fill-mode: forwards;
+
+  opacity: 0.7;
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+   -moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+     -o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+        transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+  cursor: pointer;
+}

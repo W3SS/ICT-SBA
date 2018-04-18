@@ -1,0 +1,219 @@
+html,body,div,span,h1{margin:0;padding:0;outline:0;vertical-align: baseline;line-height: 100px;}
+body{line-height:1;}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;vertical-align:baseline;text-decoration:none}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+body {
+  font-family: Agency FB, Heiti TC, Microsoft YaHei;
+}
+
+#blockuser {
+-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+   -moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+     -o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+        transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+   -moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+     -o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+        transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+#leftborder {
+	position: fixed;
+	top: 0;
+	left: -23%;
+
+	width: 24%;
+	height: 100%;
+
+	background-color: #000000;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+#leftborder:hover {
+	left: 0px;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}
+
+.leftborder-white {
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-color: #000000;
+
+	position:absolute;
+
+	width: 95%;
+	height: 100%;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	max-height: 1080px;
+	overflow-y: auto;
+	cursor: pointer;
+}
+
+#rightborder {
+	position: fixed;
+	top: 0;
+	right: -23%;
+
+	width: 24%;
+	height: 100%;
+
+	background-color: #000000;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+	z-index: 1;
+}
+
+#rightborder:hover {
+	right: 0px;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+	z-index: 1;
+}
+
+.rightborder-white {
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-color: #000000;
+
+	position:absolute;
+	right: 0px;
+
+	width: 95%;
+	height: 100%;
+
+	-webkit-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition: all 1000ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	-o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+	max-height: 1080px;
+	overflow-y: auto;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.h1 {
+	font-size: 75px;
+	line-height: 100px;
+	color: #000000;
+}
+
+/* Scrollbar Chrome*/
+*::-webkit-scrollbar {
+    width: 0.65%;
+    height: 10px;
+    background: #1e1e1e;
+    border: 1px solid #252525;
+}
+
+*::-webkit-scrollbar-button {
+display: none;
+}
+
+*::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-track {
+border: 0;
+box-shadow: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    min-height: 28px;
+    background: #333333;
+}
+
+*::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-track {
+background: #1e1e1e;
+}
+
+#CommentButton, #UploadIconButton
+{
+	animation-name: inflash;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+#CommentButton:hover, #UploadIconButton:hover
+{
+	animation-name: flash;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+#frm {
+	line-height: 100%;
+	position: fixed;
+    text-align: center;
+    margin: 0 auto;
+	color: white;
+    font-size: 187.5%;
+	left: 33.25%;
+	top: 40%;
+	visibility: hidden;
+	opacity: 0;
+-webkit-transition: all 500ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+   -moz-transition: all 500ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+     -o-transition: all 500ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+        transition: all 500ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+
+-webkit-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+   -moz-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+     -o-transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+        transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000); /* custom */
+}

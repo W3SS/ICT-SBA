@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SVI System - Contact</title>
+	<meta http-equiv="content-type" charset="utf-8" />
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<style>
+		html,body{
+		  font-family: Agency FB, Heiti TC, Microsoft YaHei;
+		}
+		::-moz-selection {
+		  color: #fff;
+		  background: #000;
+		}
+		::selection {
+		  color: #fff;
+		  background: #000;
+		}
+
+		input {
+			font-family: Agency FB, Heiti TC, Microsoft YaHei;
+		}
+
+		input[type="submit"], input[type="reset"], input[type="button"]
+		{
+		  animation-name: inflash;
+		  animation-duration: 0.5s;
+		  animation-fill-mode: forwards;
+		}
+
+		input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
+		  animation-name: flash;
+		  animation-duration: 0.5s;
+		  animation-fill-mode: forwards;
+		}
+
+		#contact {
+			position: absolute;
+			left: 50%;
+			top: 10%;
+			visibility: hidden;
+			width: 48%;
+			z-index: 0;
+		}
+
+		h1 {
+			font-size: 333%;
+			  animation-name: inflash;
+			  animation-duration: 0.5s;
+			  animation-fill-mode: forwards;
+		}
+
+		h1:hover {
+	  		  animation-name: flash;
+	  		  animation-duration: 0.5s;
+	  		  animation-fill-mode: forwards;
+		}
+
+		p {
+			font-size: 200%;
+		}
+
+
+		/* Scrollbar Chrome*/
+		*::-webkit-scrollbar {
+			display: none !important;
+		}
+		*::-webkit-scrollbar-button {
+			display: none !important;
+		}
+		*::-webkit-scrollbar-thumb,
+		*::-webkit-scrollbar-track {
+			display: none !important;
+		}
+		*::-webkit-scrollbar-thumb {
+			display: none !important;
+		}
+		*::-webkit-scrollbar-corner,
+		*::-webkit-scrollbar-track {
+			display: none !important;
+		}
+		#navigation
+		{
+			z-index: 100;
+		}
+	</style>
+</head>
+<body>
+	<div style="position: fixed;top: 0%;left: 0%;width:100%;height:100%" id="datajson"></div>
+
+	<img id="image1" src="img/niertitle.jpg" style="height: 100%;width: 100%;opacity: 0.2;position: fixed;visibility: hidden;"/>
+
+	<div id="loginbox" style="position: fixed; top: 1%; right: 2%;line-height:100%;font-size:200%;text-align: right;visibility: hidden;">
+		<a href="index.php">
+			<input id="navigation" type="button" value="回主頁" style="background-color: #000;border: none;color: white;padding: 15px 32px;text-align: center;font-size: 16px;" onmouseenter="playc_s()" onclick="playc_s()" onmouseleave="playc_s()"/>
+		</a>
+	</div>
+
+	<div id="contact">
+		<h1 style="background-color: black;color: white;" onmouseenter="plays_s()" onmouseleave="plays_s()">關於我們 - SVI System</h1>
+		<p><strong>本公司舉辦軟件投票大賽<br/>透過網上投票選出得獎的最受歡迎軟件<br/>本公司打算設立一個資訊系統<br/>以監察投票過程</strong></p>
+		<h1 style="background-color: black;color: white;" onmouseenter="plays_s()" onmouseleave="plays_s()">特別鳴謝</h1>
+		<p><strong>
+			Wikipedia - 提供資料<br/>
+			Freepik - 提供圖形<br/>
+			Nass O - Scrollbar Source Code<br/>
+			NieR:Automata™ - 按鍵音樂及背景音樂<br/>
+			Airbnb - 轉換動畫格式方法Bodymovin<br/>
+			VincentGarreau - 粒子背景Particles.js<br/>
+		</strong></p>
+	</div>
+
+	<div id="leftborder" onmouseenter="plays_s()" onmouseleave="plays_s()">
+		<div class="leftborder-white">
+			<a href="login.php"><div id="vertical8"></div></a>
+		</div>
+	</div>
+
+	<div id="rightborder" onmouseenter="plays_s()" onmouseleave="plays_s()">
+		<div class="rightborder-white">
+			<div id="vertical9"></div>
+		</div>
+	</div>
+
+	<audio id="c_sound">
+		<source src="audio/nier.mp3" type="audio/mp3" />
+	</audio>
+
+	<audio id="s_sound">
+		<source src="audio/nier2.mp3" type="audio/mp3" />
+	</audio>
+
+	<!-- particles.js container -->
+	<div id="particles-js" style="visibility: hidden;"></div>
+
+	<script>
+		setTimeout(function(){
+			var pe = document.getElementById('particles-js');
+			pe.style.visibility = "visible";
+		}, 1250)
+	</script>
+
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+
+	<script src="js/_86.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="js/sound.js"></script>
+</body>
+</html>

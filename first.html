@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title>SVI System - Cookie</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/animate.css">
+	<style>
+		html,body{
+            font-family: Agency FB, Heiti TC, Microsoft YaHei;
+		}
+		::-moz-selection {
+		    color: #fff;
+		    background: #000;
+		}
+		::selection {
+		    color: #fff;
+		    background: #000;
+		}
+
+		input {
+			font-family: Agency FB, Heiti TC, Microsoft YaHei;
+		}
+
+        input[type="button"], input[type="reset"]
+        {
+            animation-name: inflash;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+		input[type="button"]:hover, input[type="reset"]:hover{
+        	animation-name: flash;
+        	animation-duration: 0.5s;
+        	animation-fill-mode: forwards;
+		}
+
+		#frm {
+			position: fixed;
+			left: 40%
+			z-index: -1;
+		}
+
+		#datajson
+		{
+			z-index: -2;
+		}
+	</style>
+</head>
+<body>
+	<div style="width:100%;height:100%" id="datajson"></div>
+
+	<div id="frm" style="position: fixed;left: 40%;top: 40%;visibility: hidden;">
+
+		<?php if(!empty($message)): ?>
+			<p><?= $message ?></p>
+		<?php endif; ?>
+		<h1 style="font-size: 333%;">在造訪此網站之前 我們需要一下你的個人資料</h1>
+
+		<form id="asking" method="POST"><br />
+            <h1>你的年齡是: <input type="text" name="age" style="width: 50%;font-size: 75%;border: 2px solid #000;background-color: transparent;" onkeydown="if(event.keyCode == 13) DoneAsync(); playc_s()" /><br/>
+            你的性別是: <input type="radio" name="gender" value="男性"/>男性<input type="radio" name="gender" value="女性"/>女性<br/>
+            你對軟件領域擅長嗎?: <input type="radio" name="hobby" value="true"/>擅長<input type="radio" name="hobby" value="false"/>不擅長<br/></h1>
+
+			<input type="button" value="Sumbit" onclick="DoneAsync();" style="background-color: #000;border: none;color: white;padding: 15px 32px;text-align: center;font-size: 12px;" onmouseenter="playc_s()" onmouseleave="playc_s()" onclick="playc_s()"/>
+			<input type="reset" style="background-color: #000;border: none;color: white;padding: 15px 32px;text-align: center;font-size: 12px;" onmouseenter="playc_s()" onmouseleave="playc_s()" onclick="playc_s()"/>
+		</form>
+	</div>
+
+    <script>
+    function DoneAsync()
+    {
+    	if(asking.age.value == "")
+    	{
+    		alert("請輸入你的年齡.");
+    		return;
+    	}
+
+		if(isNaN(parseInt(asking.age.value)))
+		{
+    		alert("請輸入數字.");
+    		return;
+		}
+
+		if((parseInt(asking.age.value) > 122) || (parseInt(asking.age.value) < 0))
+		{
+    		alert("請輸入適當的數字範圍內.");
+    		return;
+		}
+
+    	if(asking.gender.value == "")
+    	{
+    		alert("請選擇你的性別.");
+    		return;
+    	}
+
+    	if(asking.hobby.value == "")
+    	{
+    		alert("請選擇是否對軟件領域擅長.");
+    		return;
+    	}
+
+    	alert("謝謝你的資料, 以有助我們系統的準確性");
+
+    	window.location = 'index.php';
+    	document.getElementById("myForm").submit();
+    	return;
+    }
+    </script>
+
+	<div id="leftborder" onmouseenter="plays_s()" onmouseleave="plays_s()">
+		<div class="leftborder-white">
+			<a href="login.php"><div id="vertical8"></div></a>
+		</div>
+	</div>
+
+	<div id="rightborder" onmouseenter="plays_s()" onmouseleave="plays_s()">
+		<div class="rightborder-white">
+			<div id="vertical9"></div>
+		</div>
+	</div>
+
+	<audio id="c_sound">
+		<source src="audio/nier.mp3" type="audio/mp3" />
+	</audio>
+
+	<audio id="s_sound">
+		<source src="audio/nier2.mp3" type="audio/mp3" />
+	</audio>
+
+	<!-- particles.js container -->
+	<div id="particles-js" style="visibility: hidden;position: fixed;top: 0%;width: 100%;z-index: -2;"></div>
+
+	<script>
+		setTimeout(function(){
+			var pe = document.getElementById('particles-js');
+			pe.style.visibility = "visible";
+		}, 1250)
+		setTimeout(function(){datajson.style.display = "none";},1500)
+	</script>
+
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/_86.js"></script>
+	<script src="js/lg.js"></script>
+	<script src="js/sound.js"></script>
+</body>
+</html>
